@@ -12,8 +12,6 @@ export const codeReviewNetwork = createNetwork({
 			process.env.ANTHROPIC_API_KEY,
 	}),
 	defaultRouter: ({ network, input }) => {
-		console.log('defaultRouter')
-		console.log({ network, input })
 		if (network?.state.kv.get('done')) {
 			return
 		}

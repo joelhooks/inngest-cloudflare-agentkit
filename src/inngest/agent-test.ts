@@ -95,7 +95,10 @@ export default DataProcessor.getInstance();
 export const agentTest = inngest.createFunction(
 	{ id: 'agent-test' },
 	{ event: 'demo/event.sent' },
-	async ({ step }) => {
+	async (opts) => {
+
+
+
 		const state = new State()
 
 		// Set some initial state
