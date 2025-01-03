@@ -5,7 +5,11 @@ import { serve } from 'inngest/hono'
 
 import { functions, inngest } from './inngest'
 
-const app = new Hono()
+type Bindings = {
+  ANTHROPIC_API_KEY: string
+}
+
+const app = new Hono<{ Bindings: Bindings }>()
 
 app.on(
 	['GET', 'PUT', 'POST'],
