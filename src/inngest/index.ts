@@ -1,6 +1,5 @@
-import { helloWorld } from "./hello-world";
-import { agentTest } from "./agent-test";
+import { agentTest } from './agent-test'
 
-export const functions = [helloWorld, agentTest];
+export const functions = [agentTest]
 
-export { inngest } from "./inngest-client";
+export { inngest } from './inngest-client'
