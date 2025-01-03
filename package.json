@@ -1,27 +1,31 @@
 {
-  "name": "inngest-wrangler-agentkit",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "dev:inngest": "pnpx inngest-cli@latest dev --no-discovery -u http://localhost:8787/api/inngest",
-    "start": "wrangler dev",
-    "test": "vitest",
-    "cf-typegen": "wrangler types",
-    "format": "prettier --write ."
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.40",
-    "@cloudflare/workers-types": "^4.20241230.0",
-    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
-    "prettier": "^3.2.5",
-    "typescript": "^5.5.2",
-    "vitest": "2.1.8",
-    "wrangler": "^3.60.3"
-  },
-  "dependencies": {
-    "hono": "^4.6.15",
-    "inngest": "latest"
-  }
+	"name": "inngest-wrangler-agentkit",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"dev:inngest": "pnpx inngest-cli@latest dev --no-discovery -u http://localhost:8787/api/inngest",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.5.40",
+		"@cloudflare/workers-types": "^4.20241230.0",
+		"@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+		"@types/node": "^22.10.4",
+		"prettier": "^3.2.5",
+		"typescript": "^5.5.2",
+		"vitest": "2.1.8",
+		"wrangler": "^3.99.0"
+	},
+	"dependencies": {
+		"@inngest/agent-kit": "^0.1.2",
+		"dotenv": "^16.4.7",
+		"hono": "^4.6.15",
+		"inngest": "latest",
+		"zod": "^3.24.1"
+	}
 }
