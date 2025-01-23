@@ -1,5 +1,5 @@
 {
-	"name": "inngest-wrangler-agentkit",
+	"name": "inngest-cloudflare-agentkit",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
@@ -19,13 +19,13 @@
 		"prettier": "^3.2.5",
 		"typescript": "^5.5.2",
 		"vitest": "2.1.8",
-		"wrangler": "^3.99.0"
+		"wrangler": "^3.105.0"
 	},
 	"dependencies": {
 		"@inngest/agent-kit": "^0.1.2",
 		"dotenv": "^16.4.7",
 		"hono": "^4.6.15",
-		"inngest": "latest",
+		"inngest": "^3.30.0",
 		"wangler": "^0.0.7",
 		"zod": "^3.24.1"
 	}

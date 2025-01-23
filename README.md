@@ -1,4 +1,4 @@
-# Inngest Wrangler AgentKit
+# Inngest Cloudflare AgentKit
 
 A Cloudflare Worker using Inngest's AgentKit to run a grumpy code review agent powered by Claude.
 
